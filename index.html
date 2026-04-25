@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>AZZ的专属食堂</title>
+  <meta name="theme-color" content="#ff6b35" />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="app">
+    <header class="store-header">
+      <div class="store-bg"></div>
+
+      <div class="store-info">
+        <div class="store-avatar">🍽️</div>
+        <div>
+          <h1>AZZ的专属食堂</h1>
+          <p>老婆专属晚餐点菜</p>
+        </div>
+      </div>
+
+      <div class="store-meta">
+        <span>家常菜</span>
+        <span>今晚菜单</span>
+        <span>结算自动发邮件</span>
+      </div>
+    </header>
+
+    <section class="toolbar">
+      <div class="search-box">
+        <span>🔍</span>
+        <input id="searchInput" placeholder="搜索菜名，比如 排骨 / 面 / 汤" />
+      </div>
+      <button class="small-btn" id="favoriteOnlyBtn">只看常点</button>
+    </section>
+
+    <main class="menu-shell">
+      <aside class="category-sidebar" id="categorySidebar"></aside>
+      <section class="dish-panel" id="dishPanel"></section>
+    </main>
+
+    <button class="cart-fab" id="cartFab">
+      <div class="cart-bubble" id="cartBubble">0</div>
+      <div>
+        <strong id="cartMainText">还没选菜</strong>
+        <span id="cartSubText">点 + 加入今晚菜单</span>
+      </div>
+      <em>去确认</em>
+    </button>
+  </div>
+
+  <div class="overlay" id="overlay"></div>
+
+  <aside class="cart-drawer" id="cartDrawer">
+    <div class="drawer-grip"></div>
+    <div class="drawer-title">
+      <h2>今晚菜单</h2>
+      <button id="clearCartBtn">清空</button>
+    </div>
+
+    <div id="cartList" class="cart-list"></div>
+
+    <section class="form-card">
+      <label>口味备注</label>
+      <textarea id="orderNote" placeholder="例如：少辣、不要香菜、米饭少一点、想喝冰的"></textarea>
+    </section>
+
+    <section class="summary-card">
+      <div>
+        <span>合计</span>
+        <strong id="totalPrice">￥0</strong>
+      </div>
+      <button id="confirmBtn">结算并发送邮件</button>
+    </section>
+
+    <section class="share-card" id="shareCard">
+      <div class="share-title">菜单内容</div>
+      <pre id="shareText"></pre>
+      <div class="share-actions">
+        <button id="copyBtn">复制菜单</button>
+        <button id="shareBtn">手机分享</button>
+      </div>
+    </section>
+  </aside>
+
+  <div class="toast" id="toast"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script src="config.js"></script>
+  <script src="menu-data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

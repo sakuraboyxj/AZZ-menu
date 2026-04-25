@@ -1,0 +1,141 @@
+# 今晚吃什么：完整 Product 工程
+
+这是完整版本，不是单 HTML 文件。
+
+## 工程结构
+
+```text
+index.html
+styles.css
+config.js
+app.js
+menu-data.js
+manifest.json
+sw.js
+images/
+assets/
+README.md
+```
+
+## 功能
+
+- 顶部 banner 可换成你们的照片
+- 左侧分类
+- 右侧菜品列表
+- 点击 `+` 加菜
+- 点击 `−` 减菜
+- 底部购物车
+- 购物车抽屉
+- 备注
+- 结算后通过 EmailJS 自动发邮件
+- 菜单复制
+- 手机分享
+- GitHub Pages 可部署
+
+## 修改顶部照片
+
+把你们的照片放到：
+
+```text
+images/us.jpg
+```
+
+打开：
+
+```text
+config.js
+```
+
+改：
+
+```js
+headerImage: "images/us.jpg"
+```
+
+建议照片比例：
+
+```text
+1200 × 450
+```
+
+如果想恢复默认橙色背景：
+
+```js
+headerImage: ""
+```
+
+## 配置 EmailJS
+
+打开：
+
+```text
+config.js
+```
+
+填写：
+
+```js
+email: {
+  publicKey: "你的 Public Key",
+  serviceId: "你的 Service ID",
+  templateId: "你的 Template ID",
+  toEmail: "你的邮箱@gmail.com"
+}
+```
+
+EmailJS 模板建议：
+
+```text
+老婆点的晚餐：
+
+{{message}}
+
+合计：{{total}}
+时间：{{time}}
+```
+
+如果模板要收件人变量，用：
+
+```text
+{{to_email}}
+```
+
+## 修改菜品
+
+打开：
+
+```text
+menu-data.js
+```
+
+加菜示例：
+
+```js
+{
+  id: "hot_yuxiangrousi",
+  name: "鱼香肉丝",
+  desc: "酸甜微辣，很下饭",
+  price: 36,
+  image: "images/yuxiangrousi.jpg",
+  tag: "下饭",
+  favorite: true
+}
+```
+
+然后把图片放到：
+
+```text
+images/yuxiangrousi.jpg
+```
+
+## 部署到 GitHub Pages
+
+1. 新建 GitHub 仓库
+2. 上传本工程所有文件，不要只上传 zip
+3. 仓库首页应该直接看到 `index.html`
+4. `Settings → Pages`
+5. Source 选择 `Deploy from a branch`
+6. Branch 选择 `main`
+7. Folder 选择 `/root`
+8. 保存
+9. 打开生成的网址
