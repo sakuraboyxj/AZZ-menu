@@ -7,7 +7,7 @@ window.APP_CONFIG = {
   // 把你们的照片放到 images 文件夹，例如 images/us.jpg
   // 然后改成 headerImage: "images/us.jpg"
   // 如果想恢复默认橙色背景，写成：headerImage: ""
-  headerImage: "images/header-photo.svg",
+  headerImage: "images/header.png",
 
   // EmailJS 配置：
   // 从 EmailJS 后台复制这三个 ID 进来。

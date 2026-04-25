@@ -11,7 +11,6 @@ window.MENU_DATA = [
         id: "cold_paihuanggua",
         name: "拍黄瓜",
         desc: "蒜香清爽，开胃必点",
-        price: 12,
         image: "images/paihuanggua.jpg",
         tag: "清爽",
         favorite: true
@@ -20,7 +19,6 @@ window.MENU_DATA = [
         id: "cold_koushuiji",
         name: "口水鸡",
         desc: "麻辣鲜香，适合想吃点辣",
-        price: 28,
         image: "images/koushuiji.jpg",
         tag: "微辣",
         favorite: false
@@ -29,7 +27,6 @@ window.MENU_DATA = [
         id: "cold_liangbanmuer",
         name: "凉拌木耳",
         desc: "酸辣爽口，低负担",
-        price: 16,
         image: "images/liangbanmuer.jpg",
         tag: "爽口",
         favorite: false
@@ -44,7 +41,6 @@ window.MENU_DATA = [
         id: "hot_fanqiechaodan",
         name: "番茄炒蛋",
         desc: "家常口味，不容易出错",
-        price: 22,
         image: "images/fanqiechaodan.jpg",
         tag: "家常",
         favorite: true
@@ -53,7 +49,6 @@ window.MENU_DATA = [
         id: "hot_gongbaojiding",
         name: "宫保鸡丁",
         desc: "甜辣口，下饭很稳",
-        price: 32,
         image: "images/gongbaojiding.jpg",
         tag: "下饭",
         favorite: true
@@ -62,7 +57,6 @@ window.MENU_DATA = [
         id: "hot_hongshaopaigu",
         name: "红烧排骨",
         desc: "今晚硬菜，适合奖励自己",
-        price: 48,
         image: "images/hongshaopaigu.jpg",
         tag: "硬菜",
         favorite: false
@@ -71,7 +65,6 @@ window.MENU_DATA = [
         id: "hot_qingchaoshishu",
         name: "清炒时蔬",
         desc: "清淡一点，搭配肉菜刚好",
-        price: 20,
         image: "images/qingchaoshishu.jpg",
         tag: "清淡",
         favorite: false
@@ -86,7 +79,6 @@ window.MENU_DATA = [
         id: "staple_mifan",
         name: "米饭",
         desc: "一碗香喷喷白米饭",
-        price: 3,
         image: "images/mifan.jpg",
         tag: "主食",
         favorite: true
@@ -95,7 +87,6 @@ window.MENU_DATA = [
         id: "staple_congyoubanmian",
         name: "葱油拌面",
         desc: "香而不腻，简单满足",
-        price: 18,
         image: "images/congyoubanmian.jpg",
         tag: "面食",
         favorite: false
@@ -104,7 +95,6 @@ window.MENU_DATA = [
         id: "staple_jiaozi",
         name: "饺子",
         desc: "12 个，适合不想配菜时",
-        price: 26,
         image: "images/jiaozi.jpg",
         tag: "饱腹",
         favorite: false
@@ -119,7 +109,6 @@ window.MENU_DATA = [
         id: "soup_zicaidanhua",
         name: "紫菜蛋花汤",
         desc: "热乎乎，暖胃",
-        price: 12,
         image: "images/zicaidanhua.jpg",
         tag: "热汤",
         favorite: true
@@ -128,7 +117,28 @@ window.MENU_DATA = [
         id: "drink_suanmeitang",
         name: "酸梅汤",
         desc: "解腻，冰镇更好喝",
-        price: 10,
+        image: "images/suanmeitang.jpg",
+        tag: "饮品",
+        favorite: false
+      }
+    ]
+  },
+  {
+    id: "dessert",
+    name: "甜品",
+    dishes: [
+      {
+        id: "soup_zicaidanhua",
+        name: "紫菜蛋花汤",
+        desc: "热乎乎，暖胃",
+        image: "images/zicaidanhua.jpg",
+        tag: "热汤",
+        favorite: true
+      },
+      {
+        id: "drink_suanmeitang",
+        name: "酸梅汤",
+        desc: "解腻，冰镇更好喝",
         image: "images/suanmeitang.jpg",
         tag: "饮品",
         favorite: false
